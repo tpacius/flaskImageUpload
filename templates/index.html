@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload file</title>
+	<style>
+		img {
+			width: 75%,
+			height: 75%;
+			}
+	</style>
+</head>
+<body>
+	{% if filename %}
+		<div align="center"><img src="{{ url_for('send_file', filename=filename) }}"></div>
+	{% else %}
+		<form action="/" method=post enctype=multipart/form-data>
+			<input type=file name=file>
+			<input type=submit value=Upload>
+		</form>
+	{% endif %}
+</body>
+</html>
