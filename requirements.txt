@@ -1,0 +1,14 @@
+click==6.7
+decorator==4.0.9
+Flask==0.12.2
+itsdangerous==0.24
+Jinja2==2.10
+lxml==3.5.0
+MarkupSafe==1.0
+networkx==1.11
+prov==1.4.0
+pymongo==3.2.1
+python-dateutil==2.4.2
+six==1.10.0
+virtualenv==15.1.0
+Werkzeug==0.14.1
