@@ -17,7 +17,6 @@ class appTestCase(unittest.TestCase):
 
 	def test_uploaded_file(self):
 		rv = self.upload_file("test.png")
-		print(rv.data)
 		assert rv.status_code == 200
 		rv = self.upload_file("test.pdf")
 		assert rv.status_code == 200 
